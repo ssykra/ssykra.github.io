@@ -464,7 +464,7 @@
 
     <!-- ======= Contact Me Section ======= -->
     <section id="contact" class="contact">
-      <div class="container">
+      < class="container">
 
         <div class="section-title">
           <span>Contact Me</span>
@@ -537,7 +537,6 @@
               </button>
             </form>
           </div>
-
         </div>
 
       </div>
