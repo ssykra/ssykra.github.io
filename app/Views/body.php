@@ -509,27 +509,32 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
+          <div class="alert alert-primary alert-dismissible fade show d-none my-alert" role="alert">
+            <strong>Thank you!</strong> Message Sent.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+            <form name="contact-form">
+              <div class="mb-3">
+                <label for="full_name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="full_name" aria-describedby="full_name" name="full_name" autocomplete="name">
               </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" autocomplete="email">
               </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" aria-describedby="subject" name="subject" autocomplete="subject">
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" name="message" autocomplete="message"></textarea>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <button type="submit" class="btn btn-primary btn-submit">Submit</button>
+              <button class="btn btn-primary btn-loading d-none" type="button" disable>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
             </form>
           </div>
 
@@ -539,5 +544,32 @@
     </section><!-- End Contact Me Section -->
 
   </main><!-- End #main -->
+
+  <!-- Script Submit Contact Form to Google Sheet-->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby8CeAYKj73NTkFpEmZbF0rfPavS9NgvuP8vPbHtGcApLp1LHFpJgYFIAZ0eStuy1rk/exec'
+    const form = document.forms['contact-form']
+    const btnSubmit = document.querySelector('.btn-submit');
+    const btnLoading = document.querySelector('.btn-loading');
+    const myAlert = document.querySelector('.my-alert');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      btnLoading.classList.toggle('d-none');
+      btnSubmit.classList.toggle('d-none');
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          //menampilkan tombol kirim, dan menghilangkan tombol loading
+          btnLoading.classList.toggle('d-none');
+          btnSubmit.classList.toggle('d-none');
+          //menampilkan alert
+          myAlert.classList.toggle('d-none');
+          //menghilngkan semua isi form
+          form.reset();
+          console.log('Success!', response)
+        })
+        .catch(error => console.error('Error!', error.message))
+    });
+  </script>
 
 <?=$this->endSection()?>
