@@ -6,8 +6,8 @@
    <!-- ======= Hero Section ======= -->
    <section id="hero">
     <div class="hero-container">
-      <h1>Sarah Syakira Rambe</h1>
-      <h2>I'm a student at the Universitas Muhammadiyah Sukabumi</h2>
+      <h1>Welcome</h1>
+      <h2>I'm Sarah Syakira Rambe</h2>
       <a href="#about" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
     </div>
   </section><!-- End Hero -->
@@ -98,6 +98,8 @@
         <div class="section-title">
           <span>My Resume</span>
           <h2>My Resume</h2>
+          <p><em>A student of Informatics Engineering at Universitas Muhammadiyah Sukabumi.  Interested in web development and UI/UX design. Experienced in organizational activities as a member of the Public Relations Department and as Secretary in BEM-FSAINTEK. Possesses good communication skills gained from organizational and committee experiences.</em></p>
+          <p>
         </div>
 
         <div class="row">
@@ -105,8 +107,6 @@
             <h3 class="resume-title">Sumary</h3>
             <div class="resume-item pb-0">
               <h4>Sarah Syakira Rambe</h4>
-              <p><em>A student of Informatics Engineering at Universitas Muhammadiyah Sukabumi.  Interested in web development and UI/UX design. Experienced in organizational activities as a member of the Public Relations Department and as Secretary in BEM-FSAINTEK. Possesses good communication skills gained from organizational and committee experiences.</em></p>
-              <p>
               <ul>
                 <li>Sukabumi, Jawa Barat</li>
                 <li>+62 85872322510</li>
@@ -175,54 +175,6 @@
       </div>
     </section><!-- End My Resume Section -->
 
-    <!-- ======= My Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
-
-        <div class="section-title">
-          <span>My Services</span>
-          <h2>My Services</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End My Services Section -->
-
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
       <div class="container position-relative">
@@ -237,7 +189,7 @@
                 <h4>College Student</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  من جد و جد
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -258,8 +210,8 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Dinda Putri Khaerunnisa</h3>
+                <img src="assets/img/testimonials/dinda.jpg" class="testimonial-img" alt="">
+                <h3>Dinda Putri Khoirunnisa</h3>
                 <h4>College Student</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
@@ -457,6 +409,15 @@
             </div>
           </div>
 
+          <div class="col-lg-4 col-md-6 portfolio-item filter-mygallery">
+            <div class="portfolio-img"><img src="assets/img/portfolio/galeri-4.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>View</h4>
+              <p>My GALLERY</p>
+              <a href="assets/img/portfolio/galeri-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="MY GALLERY"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -464,7 +425,7 @@
 
     <!-- ======= Contact Me Section ======= -->
     <section id="contact" class="contact">
-      < class="container">
+    <class="container">
 
         <div class="section-title">
           <span>Contact Me</span>
@@ -534,7 +495,7 @@
               <button class="btn btn-primary btn-loading d-none" type="button" disable>
                 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                 Loading...
-              </button>
+            </button>
             </form>
           </div>
         </div>

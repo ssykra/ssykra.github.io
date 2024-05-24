@@ -345,6 +345,13 @@ h6 {
   padding: 0 15px;
 }
 
+#hero h4 {
+  margin: 0 0 20px 0;
+  font-size: 64px;
+  font-family: "Satisfy", serif;
+  color: #fff;
+}
+
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
