@@ -6,5 +6,5 @@ use CodeIgniter\Model;
 
 class PortofolioModel extends Model
 {
-    protected $table = 'portofolio';
+    protected $table = 'portofolio'; 
 }

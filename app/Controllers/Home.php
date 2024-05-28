@@ -6,13 +6,13 @@ use App\Models\PortofolioModel;
 
 class Home extends BaseController
 {
-    protected $portofolio;
+    protected $portofolio; 
     public function __construct()
     {
         $this->portofolio = new PortofolioModel();
     }
-    public function portofolio(){
-        $portofolio = $this->portofolio->findAll();
+    public function index() : string {
+        $portofolio = $this->portofolio->findAll(); 
         $data = [
             'title' => 'portofolio',
             'title' => 'full_name',
